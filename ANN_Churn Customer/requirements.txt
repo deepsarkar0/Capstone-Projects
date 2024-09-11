@@ -1,5 +1,6 @@
-numpy
-scikit-learn
-pickle
-tensorflow
-datetime
+numpy --upgrade
+scikit-learn --upgrade
+pickle --upgrade
+tensorflow --upgrade
+datetime --upgrade
+keras --upgrade
