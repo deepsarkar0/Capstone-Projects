@@ -4,3 +4,7 @@ pickle --upgrade
 tensorflow --upgrade
 datetime --upgrade
 keras --upgrade
+pandas --upgrade
+tensorboard --upgrade
+streamlit --upgrade
+matplotlib --upgrade
