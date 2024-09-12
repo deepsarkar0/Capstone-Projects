@@ -5,7 +5,7 @@ import tensorflow as tf, keras
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, MinMaxScaler
 import pickle
 
-model = tf.keras.models.load_model('model.h5')
+model = tf.keras.models.load_model('model.hdf5')
 
 with open('label_encode.pkl','rb') as file:
     label_encode = pickle.load(file)
@@ -47,6 +47,7 @@ input_data = pd.concat([input_data.reset_index(drop=True),geo_encode],axis=1) # 
 print(input_data)
 prediction = model.predict(input_data) # Predicting the model
 
+st.write(prediction[0][0])
 if prediction[0][0] > 0.5:
     st.write('The customer is likely to Churn')
 else:
