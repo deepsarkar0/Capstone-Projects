@@ -8,13 +8,13 @@ import pickle
 
 model = keras.saving.load_model('ANN_Churn_Customer/model.keras')
 
-with open('label_encode.pkl','rb') as file:
+with open('ANN_Churn_Customer/label_encode.pkl','rb') as file:
     label_encode = pickle.load(file)
 
-with open('onehot_encode.pkl','rb') as file:
+with open('ANN_Churn_Customer/onehot_encode.pkl','rb') as file:
     onehot_encode = pickle.load(file)
     
-with open('scale.pkl','rb') as file:
+with open('ANN_Churn_Customer/scale.pkl','rb') as file:
     scale = pickle.load(file)    
     
 st.title('Customer Churn Prediction')
