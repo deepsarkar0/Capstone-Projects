@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder, MinMaxScaler
 import pickle
 
 
-model = keras.models.load_model('model.keras')
+model = keras.saving.load_model('model.keras',)
 
 with open('label_encode.pkl','rb') as file:
     label_encode = pickle.load(file)
