@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder, MinMaxScaler
 import pickle
 
 
-model = keras.saving.load_model('https://github.com/deepsarkar0/Capstone-Projects/blob/46877beccdc8019c4452a83b2e8436ddfa726e35/ANN_Churn_Customer/model.keras')
+model = keras.saving.load_model('ANN_Churn_Customer/model.keras')
 
 with open('label_encode.pkl','rb') as file:
     label_encode = pickle.load(file)
