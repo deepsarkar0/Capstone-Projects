@@ -5,7 +5,8 @@ import tensorflow as tf, keras
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, MinMaxScaler
 import pickle
 
-model = tf.keras.models.load_model('model.keras')
+
+model = keras.models.load_model('model.keras')
 
 with open('label_encode.pkl','rb') as file:
     label_encode = pickle.load(file)
