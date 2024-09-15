@@ -7,15 +7,15 @@ import warnings
 warnings.filterwarnings('ignore')
 
 from tensorflow.keras.models import load_model # type: ignore
-model = load_model('model_reg.keras')
+model = load_model('ANN_Churn_Customer/ANN_Regression/ANN_Regression/model_reg.keras')
 
-with open('label_encode_reg.pkl','rb') as file:
+with open('ANN_Churn_Customer/ANN_Regression/ANN_Regression/label_encode_reg.pkl','rb') as file:
     label_encode = pickle.load(file)
 
-with open('onehot_encode_reg.pkl','rb') as file:
+with open('ANN_Churn_Customer/ANN_Regression/ANN_Regression/onehot_encode_reg.pkl','rb') as file:
     onehot_encode = pickle.load(file)
     
-with open('scaling_reg.pkl','rb') as file:
+with open('ANN_Churn_Customer/ANN_Regression/ANN_Regression/scaling_reg.pkl','rb') as file:
     scale = pickle.load(file)    
     
 st.title('Customer Estimated Salary Prediction')
