@@ -6,15 +6,15 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder, MinMaxScaler
 import pickle
 
 
-model = keras.saving.load_model('ANN_Churn_Customer/model.keras')
+model = tf.keras.models.load_model('ANN_Churn_Customer\model.keras')
 
-with open('ANN_Churn_Customer/label_encode.pkl','rb') as file:
+with open('ANN_Churn_Customer\label_encode.pkl','rb') as file:
     label_encode = pickle.load(file)
 
-with open('ANN_Churn_Customer/onehot_encode.pkl','rb') as file:
+with open('ANN_Churn_Customer\onehot_encode.pkl','rb') as file:
     onehot_encode = pickle.load(file)
     
-with open('ANN_Churn_Customer/scale.pkl','rb') as file:
+with open('ANN_Churn_Customer\scale.pkl','rb') as file:
     scale = pickle.load(file)    
     
 st.title('Customer Churn Prediction')
