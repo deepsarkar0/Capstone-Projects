@@ -1,7 +1,5 @@
 import streamlit as st
 import numpy as np, pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder,OneHotEncoder,MinMaxScaler
 import pickle
 import tensorflow
 from tensorflow import keras # type: ignore
